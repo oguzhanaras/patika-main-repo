@@ -1,0 +1,1 @@
+kullanıcının bilgilerini isteyen basit bir form.
