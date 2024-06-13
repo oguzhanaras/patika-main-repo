@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* .bolum1 styles */
+
+.bolum1 {
+    height: 100vh;
+    background: url("../images/bG_1.jpg");
+    background-size: cover;
+    background-position: 50% 0;
+    position: relative;
+    min-width: 1%;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bolum1 .container .navbar {
+    position: absolute;
+    top: 30px;
+    width: 85%;
+    z-index: 100;
+}
+
+@media only screen and (max-width:768px) {
+
+    .bolum1 .container .navbar {
+        background: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.bolum1 .navbar-brand {
+    font-weight: 600;
+} 
+
+.bolum1 .navbar li {
+    margin-left: 15px;
+}
+
+.bolum1 .navbar li a {
+
+    font-size: 15px;
+    color: white !important;
+    font-weight: 400;
+    letter-spacing: 1px;
+    transition: 0.2s;
+}
+
+.bolum1 .navbar li a.active,
+.bolum1 .navbar li a:hover {
+    color: #f7b71d !important;
+}
+
+.bolum1 .container .row {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.giris {
+    z-index: 1;
+    margin-top: 40px;
+}
+
+.bolum1 .sagicerik {
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.bolum1 .sagicerik input[type="text"] {
+    font-size: 12px;
+}
+
+.bolum1 .sagicerik h3 {
+    color: black;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.bolum1 .sagicerik label {
+
+    color: black;
+    font-size: 13px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.sag-yer {
+    height: 100% !important;
+}
+
+.bolum1 .sagicerik button {
+    background-color: #f7b71d !important;
+    border: 1px solid #fc983c !important;
+    padding: 15px 0;
+}
+
+@media only screen and (max-width:768px) {
+
+    .bolum1 {
+        height: 850px;
+    }
+}
+
+
+/* .bolum2 styles */
+
+.bolum2 {
+    position: relative;
+    margin-top: 40px;
+}
+
+.bolum2 form .btn {
+    background-color: #f7b71d;
+    margin: 25px;
+    width: 90%;
+}
+
+.bolum2 form .row {
+    background-color: rgb(240, 246, 244, .5);
+    border-radius: 10px;
+}
+
+.bolum2 form .form-group {
+    padding: 10px;
+}
+
+.bolum2 form .form-group label {
+    font-size: 18;
+    font-weight: 500;
+    margin: 5px 0;
+}
+
+.bolum2 form .form-group select {
+    font-size: 13px;
+    font-weight: 300px;    
+}
+
+/* BOLUM 3 */
+
+.bolum3 {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.bolum3 p {
+    color: #fc983c;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.bolum3 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum3 .row i {
+    font-size: 25px;
+    color: #fc983c;
+}
+
+.bolum3 .row h4 {
+    display: inline;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.bolum3 .row p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #454545;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* BOLUM 4 */
+
+.bolum4 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum4 p {
+    font-size: 12px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum4 h3 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum4 .etiket {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ababab;
+    padding-bottom: 20px;
+}
+
+.bolum4 .etiket .img {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+
+.bolum4 .fiyat {
+    background-color: white;
+}
+
+.bolum4 .tutar {
+    font-size: 20px;
+    padding: 10px;
+    color: #fc983c;
+}
+
+.bolum4 .fiyat p {
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.bolum4 .fiyat .from-day span {
+    display: block;
+    font-size: 10px;
+}
+
+.bolum4 .etiket h5 {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #000;
+}
+
+.bolum4 .etiket p {
+    color: rgba(0, 0, 0, .5);
+}
+
+.bolum4 .etiket .butonlar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.bolum4 .etiket .butonlar .btn {
+    width: 45%;
+    color: #000;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.bolum4 .etiket .butonlar .btn:hover {
+    background: #fc983c;
+    color: white;
+    font-weight: 600;
+
+}
+
+
+/* BOLUM5 */
+
+.bolum5 {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: url("../images/bg_2.jpg");
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+    margin-top: 30px;
+}
+
+.bolum5 .b5-con {
+    z-index: 100;
+    position: absolute;
+    color: white;
+    text-align: center;
+
+}
+
+.bolum5 p {
+    margin-top: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+.bolum5 h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 100px;
+}
+
+.bolum5 .resim {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #fc983c;
+    border-radius: 100%;
+    font-size: 30px;
+    padding: 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.bolum5 .icerik h3 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.bolum5 .icerik p {
+    color: rgba(255, 255, 255, .8) !important;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 10px;
+}
+
+@media only screen and (max-width:768px) {
+
+    .bolum5 {
+        height: 1300px;
+    }
+
+    .bolum5 .icerik {
+        margin-bottom: 20px;
+    }
+}
+
+/* BOLUM 6 */
+
+.bolum6 {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.bolum6 p {
+    font-size: 12px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum6 h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+
+.bolum6 .card {
+    text-align: center;
+    height: 100%;
+}
+
+.bolum6 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+}
+
+.bolum6 .card p {
+    margin-top: 25px;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum6 .card h5 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #fc983c;
+}
+
+.bolum6 .card span {
+    font-size: 16px;
+    color: #ccc;
+    font-weight: 600;
+}
+
+
+/* BOLUM7 */
+
+.bolum7 {
+    margin-top: 100px;
+}
+
+.bolum7 .resim {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+}
+
+.bolum7 .baslik p {
+    font-size: 14px;
+    color: #fc983c;
+    font-weight: 600;
+}
+
+.bolum7 .baslik h3 {
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.bolum7 article p.icerik {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+    color: #666;
+}
+
+.bolum7 article .btn {
+    background-color: #fc983c;
+    border: none;
+    color: white;
+}
+
+@media only screen and (max-width:768px) {
+    .bolum7 .resim {
+        height: 600px;
+    }
+}
+
+/* BOLUM 8 */
+
+footer {
+    
+    margin-top: 100px;
+    background: #000;
+    padding: 80px 0;
+}
+
+footer h3 {
+    color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+footer p {
+    line-height: 1.8;
+    font-weight: 400;
+    color: rgba(255, 255, 255, .8);
+}
+
+footer .sosyal-medya {
+    list-style: none;
+    margin-top: 40px;
+}
+
+
+
+footer .sosyal-medya li {
+
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #171717;
+}
+
+footer ul.sosyal-medya li a {
+    display: block;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+/* fade effect */
+.bolum2, .bolum3, .bolum4, .bolum5, .bolum6, .bolum7, footer {
+    opacity: 0;
+}
