@@ -1,0 +1,1 @@
+ilk-web-sayfan adlı projem ve pratikler
