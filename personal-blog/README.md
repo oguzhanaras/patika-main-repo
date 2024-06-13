@@ -1,0 +1,1 @@
+3 tane programlama dili ve hakkında bilgiler içeren basit bir blog sayfası
