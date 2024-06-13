@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehber-İletisim</title>
+    <style>
+        * {
+            margin: 3;
+            padding: 1;
+            box-sizing: border-box;
+        }
+        #message {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Anasayfa</a></li>
+                <li><a href="./servisler.html">Servisler</a></li>
+                <li><a href="./hakkimda.html">Hakkımda</a></li>
+                <li><a href="./iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>İletişim</h1>
+            <p>Bizimle iletişime geçiniz</p>
+        </section>
+    </header>
+    <!--content -->
+    <main>
+        <ul>
+            <li>
+                <!--e-posta -->
+                <section>
+                    <h2>E-posta yoluyla iletişime geçin</h2>
+                    <a href="mailto:someone@example.com">someone@example.com</a>
+                    <p>Çalışanlarımız size e-posta yoluyla her türlü desteği vermeye hazırdır</p>
+                </section>
+            </li>
+            <li>
+                <!-- phone -->
+                <section>
+                    <h2>Teleefon yoluyla iletişime geçin</h2>
+                    <a href="tel:99999999999">999 9999 9999</a>
+                    <p>Acil durumlar için bizi telefon numaramızdan arayabilirsiniz</p>
+                </section>
+            </li>
+            <li>
+                <!-- adres -->
+                <section>
+                    <h2>adres</h2>
+                    <p>Türkiye/Trabzon merkez mah. Şurdan sokak burdan caddesi no 19 bina 61</p>
+                </section>
+            </li>
+        </ul>
+        <!--iletisim formu -->
+        <form action="#">
+            <fieldset>
+                <legend>İletişim Formu</legend>
+                <!--ad bilgisi-->
+                <label for="name">İsim:</label>
+                <input type="text" name="name" id="name">
+                <!--e-posta bilgisi-->
+                <label for="email">E-posta:</label>
+                <input type="email" name="email" id="email">
+                <!--mesaj alanı-->
+                <div>
+                    <label for="message">Özel mesajınızı bize iletin:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <!--gonder butonu -->
+                <button type="submit">Gönder</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
