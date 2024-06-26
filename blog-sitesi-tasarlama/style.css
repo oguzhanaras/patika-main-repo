@@ -111,7 +111,8 @@ ul, ol {
 
 /* post container baslik  */
 .grid-item .post-body a {
-    margin: 10px 0px;
+    display: inline-block;
+    margin-bottom: 20px;
     color: #333;
     background-color: rgba(53, 48, 48, 0.2);
     border-radius: 5px;
