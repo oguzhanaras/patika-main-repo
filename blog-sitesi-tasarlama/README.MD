@@ -1,0 +1,1 @@
+for my css lesson simple using grid, position and display attributes
