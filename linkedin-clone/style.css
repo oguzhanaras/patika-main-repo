@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(223, 208, 187, 0.342);
+    background-color: rgba(216, 202, 183, 0.342);
 }
 .nav-div {
     display: flex;
@@ -51,10 +51,23 @@ body {
 }
 
 .left-bar-div {
-    display: flex;
-    width: 70%;
-    height: 200px;
+    width: 80%;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(141, 141, 141, 0.582);
     border-radius: 10px;
+}
+
+.left-bar-img {
+    width: 70px;
+    height: 70px;
+    margin-top: -50%;
+}
+
+.rigt-follow {
+    margin-left: -10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
