@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Review</title>
+</head>
+
+<body class="bg-slate-200">
+    <header>
+        <nav class="bg-gray-200 flex justify-between py-3 md:px-10 lg:px-20 lg:text-lg xl:px-40">
+            <ul class="flex my-auto ms-4 lg:ms-6">
+                <li class="mx-2 border-b border-purple-500 pb-1 lg:mx-3">
+                    <a href="#">Link</a>
+                </li>
+                <li class="mx-2 hover:border-b border-purple-500 pb-1 lg:mx-3">
+                    <a href="#">Link</a>
+                </li>
+                <li class="mx-2 hover:border-b border-purple-500 pb-1 lg:mx-3">
+                    <a href="#">Link</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-x my-auto"></i>
+            <div class="flex me-4 my-auto">
+                <div class="relative">
+                    <div class="absolute inset-y-0 start-0 flex items-center ps-1 pointer-events-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="rounded-lg focus:border-blue-500 text-center w-28 lg:w-40" placeholder="Search..." />
+                </div>
+                <button class="bg-purple-500 rounded px-2 ms-3 lg:ms-9">Login</button>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="flex flex-col min-h-56 justify-center text-center bg-gray-300 py-3 lg:py-8">
+                <div class="w-3/5 mx-auto">
+                    <h1 class="font-black text-2xl lg:text-5xl lg:mt-5">Quisquam necessita vel <span
+                            class="text-purple-500">labroum doloribus</span> delectus</h1>
+                    <p class="mt-2 lg:mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat sint
+                        similique fugit. Vel?</p>
+                    <div class="mt-6">
+                        <button class="bg-purple-500 rounded-sm p-1 px-2">Get Started</button>
+                        <button>Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 4 card -->
+        <section class="my-4 mt-10">
+            <div class="text-center">
+                <h2 class="font-bold my-4">What our customers are saying about us</h2>
+                <!-- content div  -->
+                <div class="md:flex md:justify-center lg:gap-20">
+                    <!-- row 1 -->
+                    <div class="w-full px-10">
+                        <!-- card div -->
+                        <div class="flex flex-col bg-white rounded my-3 mb-5 lg:w-4/6 lg:ms-auto">
+                            <!-- card body -->
+                            <div class="flex flex-col p-4 px-8">
+                                <i class="fa-solid fa-quote-left text-start "></i>
+                                <p class="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                                    itaque cumque eligendi! Id animi quibusdam numquam, maxime iure itaque doloremque.
+                                </p>
+                                <i class="fa-solid fa-quote-left text-end"></i>
+                            </div>
+                            <!-- card foot -->
+                            <div class="bg-violet-700 rounded-bottom min-h-16 p-3">
+                                <img src="https://picsum.photos/50/50" alt="foto"
+                                    class="rounded-full mx-auto img-margin">
+                                <strong class="text-white font-semibold">Distinctio Animi</strong>
+                                <span class="text-white font-normal text-xs block">ALIQUAM ILLIUM</span>
+                            </div>
+                        </div>
+                        <!-- card div -->
+                        <div class="flex flex-col bg-white rounded my-3 mb-5 lg:w-4/6 lg:ms-auto">
+                            <!-- card body -->
+                            <div class="flex flex-col p-4 px-8">
+                                <i class="fa-solid fa-quote-left text-start "></i>
+                                <p class="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                                    itaque cumque eligendi! Id animi quibusdam numquam, maxime iure itaque doloremque.
+                                </p>
+                                <i class="fa-solid fa-quote-left text-end"></i>
+                            </div>
+                            <!-- card foot -->
+                            <div class="bg-violet-700 rounded-bottom min-h-16 p-3">
+                                <img src="https://picsum.photos/50/50" alt="foto"
+                                    class="rounded-full mx-auto img-margin">
+                                <strong class="text-white font-semibold">Distinctio Animi</strong>
+                                <span class="text-white font-normal text-xs block">ALIQUAM ILLIUM</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row 2 -->
+                    <div class="w-full px-10">
+                        <!-- card div -->
+                        <div class="flex flex-col bg-white rounded my-3 mb-5 lg:w-4/6 lg:me-auto">
+                            <!-- card body -->
+                            <div class="flex flex-col p-4 px-8">
+                                <i class="fa-solid fa-quote-left text-start "></i>
+                                <p class="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                                    itaque cumque eligendi! Id animi quibusdam numquam, maxime iure itaque doloremque.
+                                </p>
+                                <i class="fa-solid fa-quote-left text-end"></i>
+                            </div>
+                            <!-- card foot -->
+                            <div class="bg-violet-700 rounded-bottom min-h-16 p-3">
+                                <img src="https://picsum.photos/50/50" alt="foto"
+                                    class="rounded-full mx-auto img-margin">
+                                <strong class="text-white font-semibold">Distinctio Animi</strong>
+                                <span class="text-white font-normal text-xs block">ALIQUAM ILLIUM</span>
+                            </div>
+                        </div>
+                        <!-- card div -->
+                        <div class="flex flex-col bg-white rounded my-3 mb-5 lg:w-4/6 lg:me-auto">
+                            <!-- card body -->
+                            <div class="flex flex-col p-4 px-8">
+                                <i class="fa-solid fa-quote-left text-start "></i>
+                                <p class="px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+                                    itaque cumque eligendi! Id animi quibusdam numquam, maxime iure itaque doloremque.
+                                </p>
+                                <i class="fa-solid fa-quote-left text-end"></i>
+                            </div>
+                            <!-- card foot -->
+                            <div class="bg-violet-700 rounded-bottom min-h-16 p-3">
+                                <img src="https://picsum.photos/50/50" alt="foto"
+                                    class="rounded-full mx-auto img-margin">
+                                <strong class="text-white font-semibold">Distinctio Animi</strong>
+                                <span class="text-white font-normal text-xs block">ALIQUAM ILLIUM</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+        <section>
+            <div class="flex flex-col justify-center items-center bg-gray-300 py-5">
+                <div class="flex justify-center w-full my-3 lg:w-3/5">
+                    <div class="bg-white w-4/6 rounded-lg p-5">
+                        <h5 class="font-bold text-xl mb-2">Contact us</h5>
+                        <form>
+                            <label for="name"
+                                class="block text-gray-700 text-sm font-bold my-2">Name</label>
+                            <input type="text" name="name" placeholder="enter your name"
+                                class="w-full shadow border rounded text-gray-700 leading-tight focus:shadow-outline p-2">
+
+                            <label for="mail"
+                                class="block text-gray-700 text-sm font-bold my-2">Email</label>
+                            <input type="email" name="mail" placeholder="enter your email"
+                                class="w-full shadow border rounded text-gray-700 leading-tight focus:shadow-outline p-2">
+
+                            <label for="message"
+                                class="block text-gray-700 text-sm font-bold my-2">Message</label>
+                            <textarea name="message" placeholder="enter your message"
+                                class="w-full shadow border rounded text-gray-700 leading-tight focus:shadow-outline p-2"></textarea>
+
+                            <button type="submit"
+                                class="block bg-violet-500 text-white w-full rounded mt-3 p-1">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="flex justify-between w-full px-8 mt-5 lg:w-4/6">
+                    <div>
+                        <a href="#"
+                            class="m-1 p-1 hover:border hover:rounded-lg hover:bg-purple-200">Shop</a>
+                        <a href="#"
+                            class="m-1 p-1 hover:border hover:rounded-lg hover:bg-purple-200">About</a>
+                        <a href="#"
+                            class="m-1 p-1 hover:border hover:rounded-lg hover:bg-purple-200">Blog</a>
+                        <a href="#"
+                            class="m-1 p-1 hover:border hover:rounded-lg hover:bg-purple-200">Pricing</a>
+                        <a href="#"
+                            class="m-1 p-1 hover:border hover:rounded-lg hover:bg-purple-200">Contact</a>
+                    </div>
+                    <div class="p-1">
+                        <i class="fa-brands fa-instagram m-1 text-white bg-violet-500 p-1.5 rounded-full"></i>
+                        <i class="fa-brands fa-pinterest m-1 text-white bg-violet-500 p-1.5 rounded-full"></i>
+                        <i class="fa-brands fa-x-twitter m-1 text-white bg-violet-500 p-1.5 rounded-full"></i>
+                        <i class="fa-brands fa-facebook m-1 text-white bg-violet-500 p-1.5 rounded-full"></i>
+                        <i class="fa-brands fa-google m-1 text-white bg-violet-500 p-1.5 rounded-full"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
