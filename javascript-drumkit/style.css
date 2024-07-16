@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.container {
+    height: 100vh;
+    background-color: rgb(103, 194, 163);
+
+}
+
+.baslik {
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.image img {
+    width: 900px;
+    height: 600px;
+}
+
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn-group button {
+    margin: 0px 20px;
+    padding: 10px 40px;
+    border-radius: 20px;
+}
