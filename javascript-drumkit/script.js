@@ -10,7 +10,7 @@ let l = document.getElementById("l");
 
 
 document.body.addEventListener("keydown", (event) => {
-    let key = event.key;
+    let key = event.key.toLocaleLowerCase();
     let sound = document.getElementById(key + "-audio");
     sound.play();
     document.getElementById(key).style.backgroundColor = "yellow";
@@ -18,7 +18,7 @@ document.body.addEventListener("keydown", (event) => {
 });
 
 document.body.addEventListener("keyup", (event) => {
-    let key = event.key;
+    let key = event.key.toLocaleLowerCase();
     document.getElementById(key).style.backgroundColor = "white";
     document.getElementById(key).style.boxShadow = "none";
 });
