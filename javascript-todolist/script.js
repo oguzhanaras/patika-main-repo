@@ -5,7 +5,7 @@ const toastDiv = document.getElementById('myToast');
 const toastText = document.getElementById('toast-text');
 let list = document.getElementById('list');
 const toast = new bootstrap.Toast(toastDiv);
-let count = 0;
+let count = localStorage.length;
 const closeButton = document.getElementById('close-btn');
 
 addTaskBtn.addEventListener('click', function() {
@@ -38,12 +38,20 @@ addTaskBtn.addEventListener('click', function() {
 document.addEventListener("DOMContentLoaded", () => {
     const tasks = localStorage;
     if (tasks.length) {
-        for (let i = 0; i < tasks.length; i++) {
-            const li = document.createElement('li');
-            li.classList.add('task', 'list-group-item');
-            li.textContent = tasks[i + "task"];
-            list.appendChild(li);
-            count++;
+        console.log(count, tasks);
+        x = tasks.length;
+        for (let i = 0; i < x; i++) {
+
+            console.log(count, tasks[i])
+            if (tasks["task" + i]) {
+                const li = document.createElement('li');
+                li.classList.add('task', 'list-group-item');
+                li.setAttribute('task-id', i);
+                li.textContent = tasks["task" + i];
+                list.appendChild(li);
+            } else {
+                x++;
+            }
         }
     }
 });
