@@ -1,0 +1,129 @@
+#our-trainers {
+    margin-top: 50px;
+    padding: 30px 0;
+}
+
+#our-trainers #our-trainers-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-trainers-body h2 {
+    color: var(--title-color);
+    font-weight: 900;
+}
+
+#our-trainers-body p {
+    text-align: center;
+    width: 50%;
+    margin: 15px 0;
+    font-weight: 600;
+}
+
+#our-trainers-images img {
+    width: 200px;
+    height: auto;
+    border: 1px solid var(--custom-color);
+    border-radius: 5px;
+}
+
+/* image border  */
+.bordered-image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin: 30px;
+}
+
+.bordered-image {
+    display: block;
+}
+
+.border-left,
+.border-right
+{
+    position: absolute;
+    background: var(--title-color);
+    width: 8px;
+}
+
+.border-top,
+.border-bottom {
+    position: absolute;
+    background: var(--title-color);
+    height: 8px;
+}
+
+.border-left {
+    top: 35%;
+    left: -8px;
+    height: 30%;
+    transition: top 2s, height 2s;
+}
+
+.border-right {
+    top: 35%;
+    right: -8px;
+    height: 30%;
+    transition: top 2s, height 2s;
+}
+
+.border-top {
+    top: -8px;
+    left: 35%;
+    width: 30%;
+    transition: left 2s, width 2s;
+}
+
+.border-bottom {
+    bottom: -8px;
+    left: 35%;
+    width: 30%;
+    transition: left 2s, width 2s;
+}
+
+.trainer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color-2);
+    justify-content: center;
+    position: absolute;
+    visibility: hidden;
+    bottom: 5px;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+    background: var(--title-color);
+    clip-path: polygon(10% 0, 90% 0, 90% 20%, 100% 20%, 100% 80%, 90% 80%, 90% 100%, 10% 100%, 10% 80%, 0 80%, 0 20%, 10% 20%);
+    transition: all .2s;
+}
+
+.bordered-image-wrapper:hover {
+    .border-left,
+    .border-right {
+        height: 50%;
+        transition: top 2s, height 2s;
+    }
+
+    .border-bottom {
+        left: 15%;
+        width: 70%;
+        transition: left 2s, width 2s;
+    }
+
+    .trainer-info {
+        visibility: visible;
+        transition: all .2s;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bordered-image-wrapper {
+        display: block;
+        margin: 50px auto;
+    }
+}

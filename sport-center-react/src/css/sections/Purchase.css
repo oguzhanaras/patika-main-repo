@@ -1,0 +1,69 @@
+#purchase {
+    margin-top: 30px; 
+}
+
+#purchase #purchase-content {
+    flex-direction: column;
+    align-items: center;
+}
+
+#purchase-content h2 {
+    color: var(--title-color);
+    font-weight: 900;
+}
+
+#purchase-content p {
+    text-align: center;
+    width: 50%;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+#purchase-content #purchase-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+#purchase-images #purchase-item-wrapper {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    height: 320px;
+    width: 180px;
+    border-radius: 10px;
+}
+
+#purchase-item-wrapper .purchase-image {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#purchase-item-wrapper h5 {
+    font-weight: 700;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+#purchase-item-wrapper span {
+    font-weight: 600;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* indirim olan urunun fiyatının üstünü çizmek için */
+#purchase-item-wrapper .discount {
+    text-decoration: line-through;
+}
+
+#purchase-item-wrapper .purchase-item-foot {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 5px;
+    color: var(--title-color);
+    font-weight: 800;
+    margin-top: 8px;
+}

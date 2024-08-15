@@ -1,0 +1,255 @@
+#our-classes {
+    position: relative;
+    margin-bottom: 50px;
+    height: auto;
+}
+
+#gray-effect {
+    background-color: rgba(207, 197, 197, 0.185);
+    position: absolute;
+    height: 70vh;
+    width: 60%;
+    right: 0;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        20% 100%
+    );
+    z-index: -1;
+}
+
+#our-classes-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+#our-classes-div #our-class-head {
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#our-class-head h2 {
+    color: var(--title-color);
+    text-align: center;
+    font-weight: 900;
+}
+
+#our-class-head p {
+    margin: 20px auto;
+    width: 50%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#btn-group {
+    width: 80%;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#btn-group button {
+    background-color: var(--title-color);
+    position: relative;
+    color: var(--text-color-2);
+    padding: 15px 20px;
+    min-width: 110px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#btn-group .btn-effect {
+    position: absolute;
+    background-color: var(--custom-color);
+    width: 30px;
+    height: 13px;
+    bottom: -28%;
+    left: 37%;
+    clip-path: polygon(
+        0% 0%,
+        100% 0%,
+        50% 100%
+    );
+}
+
+#our-class-content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    width: 90%;
+}
+
+#our-class-info {
+    width: 50%;
+}
+
+#our-class-info h3 {
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#our-class-info p {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#our-class-img {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+}
+
+#our-class-img img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+#our-class-bmi {
+    display: flex;
+    margin-top: 120px;
+}
+
+#calculator,
+#calculator-show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#calculator h2 {
+    color: var(--title-color);
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#calculator p {
+    width: 70%;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+#calculator-show h5 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#calculator-show img {
+    width: 99%;
+    height: 70%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slider {
+    background: #ffffff;
+    width: 100%;
+    height: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    background: url('../../images/caret-up-fill.svg') no-repeat;
+    background-size: 40px 40px;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    border: 0;
+    width: 40px;
+    height: 40px;
+    background: url('../../images/caret-up-fill.svg') no-repeat;
+    background-size: 40px 40px;
+    color: var(--custom-color);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    #btn-group {
+        gap: 60px;
+    }
+
+    #our-class-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #our-class-info {
+        width: 100%;
+        padding: 0 10px;
+    }
+    
+    #our-class-info h3 {
+        text-align: center;
+    }
+
+    #our-class-info p {
+        width: 100%;
+        text-align: center; 
+    }
+
+    #our-class-img {
+        width: 100%;
+    }
+
+    #our-class-img img {
+        width: 100%;
+    }
+
+    #our-class-bmi {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    #calculator,
+    #calculator-show {
+        width: 100%;
+    }
+
+    #calculator-show {
+        margin-top: 20px;
+    }
+}

@@ -1,0 +1,36 @@
+footer {
+    background-color: var(--title-color);
+    padding: 20px 0;
+}
+
+footer .container {
+    flex-direction: column;
+    color: var(--text-color-2);
+}
+
+footer .container p {
+    font-weight: 600;
+}
+
+footer #footer-links {
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-around;
+}
+
+#footer-links div {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer-links div h5 {
+    color: var(--custom-color);
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+#footer-links div a {
+    margin: 6px 0;
+    color: var(--text-color-2);
+}

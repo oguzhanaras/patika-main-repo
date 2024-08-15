@@ -1,0 +1,99 @@
+#review {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+#review .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#review .container h3 {
+    color: var(--title-color);
+    font-weight: 900;
+}
+
+#review .container #review-title {
+    text-align: center;
+    width: 50%;
+    margin: 25px 0;
+    font-weight: 600;
+}
+
+#review #clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 45px;
+    margin-bottom: 30px;
+}
+
+.client-wrapper .client-wrapper-head {
+    display: flex;
+}
+
+.client-wrapper-head img {
+    border-radius: 100%;
+}
+
+.client-wrapper-head div {
+    margin-left: 8px;
+}
+
+.client-wrapper-head div h6 {
+    font-size: 16px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.client-wrapper .client-wrapper-content {
+    background-color: var(--title-color);
+    margin-top: 12px;
+    padding: 20px;
+}
+
+.client-wrapper-content p {
+    color: var(--text-color-2);
+    font-weight: 600;
+}
+
+.client-wrapper .client-wrapper-effect {
+    position: relative;
+}
+
+/* metin kutularının altında sağ ve soldaki efekt */
+.client-wrapper-effect .effect-item-left {
+    background-color: rgba(23, 23, 173, 0.527);
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    top: 0;
+    left: 0;
+    clip-path: polygon(
+        0% 0%,
+        50% 0%,
+        50% 100%
+    );
+}
+
+.client-wrapper-effect .effect-item-right {
+    background-color: rgba(23, 23, 173, 0.527);
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    clip-path: polygon(
+        50% 0%,
+        100% 0%,
+        50% 100%
+    );
+}
+
+@media only screen and (max-width: 600px) {
+
+    #review #clients {
+        flex-direction: column;
+    }
+}
