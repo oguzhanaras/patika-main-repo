@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import './App.css';
 
 function Player({ playerName, diceSrc }) {
@@ -24,6 +24,13 @@ function App() {
   const [dice2, setDice2] = useState(diceList[3]); // Başlangıçta dice4.png olarak ayarlanmış
   const [winner, setWinner] = useState(''); // Kazananı saklamak için durum
   const [rolling, setRolling] = useState(false); // Zarların dönüp dönmediğini kontrol etmek için
+
+  const [usernameInput, setUsernameInput] = useState("Player 1");
+  const inputRef = useRef(null);
+
+  const handleClick = () => {
+    setUsernameInput(inputRef.current.value);
+  };
 
   useEffect(() => {
     if (!rolling && dice1 !== diceList[3] && dice2 !== diceList[3]) {
@@ -59,18 +66,14 @@ function App() {
     }
   }
 
-  const [usernameInput, setUsernameInput] = useState("Player 1");
 
   return (
     <>
       <h1>Dice Game</h1>
       <div className='container'>
         <label htmlFor="">adını guncelle</label>
-        <input
-          type="text"
-          value={usernameInput}
-          onChange={(e) => setUsernameInput(e.target.value)}
-        />  
+        <input type="text" name="name" ref={inputRef} /> 
+        <button onClick={handleClick}>guncelle</button>
         <div id='dices'>
           <Player playerName={ usernameInput } diceSrc={dice1} />
           <Player playerName="Player 2" diceSrc={dice2} />
