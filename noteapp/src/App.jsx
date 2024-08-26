@@ -10,7 +10,7 @@ function Search({ setSearchTerm }) {
     <div className="search-container">
       <input
         type="text"
-        placeholder="Ara"
+        placeholder="Notlarda Ara"
         onChange={handleSearchChange}
         className="search-input"
       />
